@@ -48,14 +48,14 @@ public class Menu {
 				arrayMenu.add(accion);
 				System.out.println((j+1)+" "+accion.descripcionItemMenu());
 			}
-			crearMenu();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public void elegirOpcion () {
-		System.out.println("Seleccione opcion, si quiere salir escriba 0");
+		crearMenu(); //en vez del menu por consola se reemplaza por el menu LANTERNA
+		/*System.out.println("Seleccione opcion, si quiere salir escriba 0");
 		Scanner leer = new Scanner (System.in);
 		int num = leer.nextInt();
 		while (num != 0) {
@@ -64,7 +64,7 @@ public class Menu {
 			}
 			System.out.println("Seleccione opcion, si quiere salir escribe 0");
 			num = leer.nextInt();
-		}
+		}*/
 	}
 		
 		private void crearMenu() {
